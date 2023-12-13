@@ -2,6 +2,7 @@ module main
 
 import os
 import flag
+import is_prime
 
 fn main() {
 	mut fp := flag.new_flag_parser(os.args)
@@ -26,26 +27,9 @@ fn main() {
 		return
 	}
 
-	if is_prime(u16(number)) {
+	if is_prime.is_prime(u16(number)) {
 		println('${number} is a prime')
 	} else {
 		println('${number} is not a prime')
 	}
-}
-
-fn is_prime(number u16) bool {
-	if number == 2 || number == 3 {
-		return true
-	}
-	if number <= 1 || number % 2 == 0 || number % 3 == 0 {
-		return false
-	}
-
-	for i := u16(5); i * i <= number; i += 6 {
-		if (number % i) == 0 {
-			return false
-		}
-	}
-
-	return true
 }
