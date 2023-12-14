@@ -1,6 +1,6 @@
 module is_prime
 
-pub fn is_prime(number u16) bool {
+pub fn is_prime(number int) bool {
 	if number == 2 || number == 3 {
 		return true
 	}

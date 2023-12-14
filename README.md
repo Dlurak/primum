@@ -1,19 +1,28 @@
 # Primum
 
-A simple CLI to see if a number is a prime number written in V.
+Primum is a simple CLI to get details about a number, e.g. if it's a prime or if it is even/odd written in V.
 
 ## Usage
 
 ```bash
-./primum <number>
+$ ./primum -m <mode> <number>
 ```
 
-e.g.
+#### Mode
 
-```bash
-./primum 13
-```
+The Default is prime but here is a list of all modes:
+
+- prime
+- even
+- odd
 
 ## Building from source
 
-Just clone the repo and run `v .`.
+I publish the binaries for Windows and Linux but if you want to build Primum from source, e.g. because you are using a mac follow these steps:
+
+1. [Install V](https://github.com/vlang/v/blob/master/doc/docs.md#install-from-source)
+2. Clone this repository
+3. Run the following command:
+   ```bash
+   $ v .
+   ```

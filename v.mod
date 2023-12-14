@@ -1,7 +1,7 @@
 Module {
 	name: 'primum'
-	description: 'Primum is a very simple CLI to check if a number is a prime number or not.'
-	version: '0.0.0'
+	description: 'Primum is a very simple CLI to check get details about a number'
+	version: '0.0.2'
 	license: 'GPL'
 	dependencies: []
 }
